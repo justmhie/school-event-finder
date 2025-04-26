@@ -3,8 +3,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:univents_flutter_application/Widget/Organizations.dart';
 import 'Login.dart';
 // import 'dart:html' as html;
-import 'package:flutter/foundation.dart';
-import '../Widget/Organizations.dart';
+
 
 final SupabaseClient supabase = Supabase.instance.client;
 
@@ -48,14 +47,17 @@ class Dashboard extends StatelessWidget {
             ListTile(
               title: const Text('Organizations'),
               onTap: () {
-                
+                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const Organizations()),
+                );
               },
             ),
             ListTile(
               title: const Text('Events'),
-              onTap: () {
-
-              },
+              onTap: () {},
             ),
           ],
         ),

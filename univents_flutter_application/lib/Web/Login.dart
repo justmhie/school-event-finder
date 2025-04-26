@@ -152,7 +152,10 @@ class _LoginState extends State<Login> {
           Card(
             elevation: 20,
             color: Colors.white,
-            margin: const EdgeInsets.all(100),
+            margin: EdgeInsets.symmetric(
+              horizontal: MediaQuery.of(context).size.width * 0.05,
+              vertical: MediaQuery.of(context).size.height * 0.05,
+            ),
             child: Padding(
               padding: const EdgeInsets.only(left: 60, top: 0),
               child: Row(
