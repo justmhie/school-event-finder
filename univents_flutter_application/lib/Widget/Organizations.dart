@@ -42,9 +42,9 @@ class _OrganizationsState extends State<Organizations> {
               child: GridView.builder(
                 itemCount: organizations.length,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 4, 
-                  crossAxisSpacing: 8,
-                  mainAxisSpacing: 8,
+                  crossAxisCount: 6, 
+                  crossAxisSpacing: 4,
+                  mainAxisSpacing: 4,
                   childAspectRatio: 0.85,
                 ),
                 itemBuilder: (context, index) {

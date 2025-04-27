@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:univents_flutter_application/Widget/Organizations.dart';
+import 'package:univents_flutter_application/Widget/Events.dart';
 import 'Login.dart';
 // import 'dart:html' as html;
 
@@ -57,7 +58,13 @@ class Dashboard extends StatelessWidget {
             ),
             ListTile(
               title: const Text('Events'),
-              onTap: () {},
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Events())
+                );
+              },
             ),
           ],
         ),
